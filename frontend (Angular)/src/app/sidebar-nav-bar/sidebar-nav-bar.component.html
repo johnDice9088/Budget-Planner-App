@@ -1,0 +1,59 @@
+<div class="d-flex">
+
+  <!-- Sidebar (unchanged) -->
+  <div class="sidebar  p-3" >
+    <h2 class="mb-4">
+      <span class="highlight-bar"></span> CRUD OPERATIONS
+    </h2>
+
+    <div class="d-grid justify-content-center text-center mb-4">
+      <img src="assets/nature.jpg" class="profile rounded-circle mb-2" style="width: 80px; height: 80px;" />
+      <h4 class="mb-0">John</h4>
+      <p class="role text-muted">Admin</p>
+    </div>
+
+    <nav class="nav flex-column mb-4">
+      <a class="nav-link" [routerLink]="['/home']" >🏠 Home</a>
+      <a class="nav-link" [routerLink]="['/revenue']" routerLinkActive="active">📘 Revenue</a>
+      <a class="nav-link" routerLink="/re" routerLinkActive="active">🎓 Students</a>
+      <a class="nav-link" routerLink="/payment" routerLinkActive="active">💰 Payment</a>
+      <a class="nav-link" routerLink="/report" routerLinkActive="active">📄 Report</a>
+      <a class="nav-link" routerLink="/settings" routerLinkActive="active">⚙️ Settings</a>
+    </nav>
+
+    <div class="logout mt-auto">
+      <a class="nav-link text-danger" routerLink="/login">🚪 Logout</a>
+    </div>
+  </div>
+
+  <!-- Main Content Area -->
+  <div class="flex-grow-1 d-flex flex-column main-color">
+
+    <!-- Top Navbar - Modified -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-3 shadow-sm d-flex align-items-center">
+      <div class="d-flex align-items-center w-100">
+        <!-- Back Button -->
+        <button class="btn btn-outline-secondary me-3" type="button">
+          <span>&#x25C0;</span>
+        </button>
+
+        <!-- Search Bar - Modified -->
+      <form class="d-flex flex-grow-1">
+          <div class="input-group">
+            <input [formControl]="searchBox" class="form-control"  type="search" placeholder="Search" aria-label="Search" >
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </div>
+        </form>
+
+        <!-- Notification Icon -->
+        <img src="assets/notification_icon.svg" alt="Notification" style="width: 24px; height: 24px;">
+      </div>
+    </nav>
+
+    <!-- Routed Content -->
+    <div >
+
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,87 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.background{
+    background-color: #ffc107;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.login-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+/* Title */
+.login-card h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.highlight-bar {
+  display: inline-block;
+  width: 5px;
+  height: 25px;
+  background-color: #fbbc04; /* Yellow bar */
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.login-card h3 {
+  font-size: 20px;
+  margin: 20px 0 10px;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+form label {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Button */
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #fbbc04;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #e0a800;
+}
+.sidebar{
+  width:22rem;
+  height:100vh;
+  background-color: #f2e9e0;
+}

@@ -1,0 +1,21 @@
+.forgot-password {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.forgot-password a {
+  color: #fbbc04;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+.signin{
+  color: #fbbc04;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 16px;
+}
